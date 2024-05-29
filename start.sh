@@ -57,6 +57,7 @@ echo " "
 echo "Updating V-Rising Dedicated Server files..."
 echo " "
 /usr/bin/steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir "$s" +login anonymous +app_update 1829350 validate +quit
+echo "480" > "$s/steam_appid.txt"
 printf "steam_appid: "
 cat "$s/steam_appid.txt"
 
