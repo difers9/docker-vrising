@@ -3,15 +3,15 @@ services:
     image: trueosiris/vrising
     environment:
       - TZ=Europe/Paris
-      - SERVERNAME=vrising-TrueOsiris
+      - SERVERNAME=vrising-Chrome
     volumes:
       - type: bind
-        source: /your/host/vrising/server
+        source: /opt/volumes/vrising_server
         target: /mnt/vrising/server
         bind:
           create_host_path: true
       - type: bind
-        source: /your/host/vrising/persistentdata
+        source: /opt/volumes/vrising_data
         target: /mnt/vrising/persistentdata
         bind:
           create_host_path: true
