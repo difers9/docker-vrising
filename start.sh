@@ -56,9 +56,9 @@ chmod -R 777 /root/.steam 2>/dev/null
 echo " "
 echo "Updating V-Rising Dedicated Server files..."
 echo " "
-/usr/bin/steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir "$s" +login anonymous +app_update 1829350 validate +quit
-chmod 777 /mnt/vrising/server/steam_appid.txt
-echo 480 > /mnt/vrising/server/steam_appid.txt
+# /usr/bin/steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir "$s" +login anonymous +app_update 1829350 validate +quit
+# chmod 777 /mnt/vrising/server/steam_appid.txt
+# echo 480 > /mnt/vrising/server/steam_appid.txt
 printf "steam_appid: "
 cat "$s/steam_appid.txt"
 echo " "
