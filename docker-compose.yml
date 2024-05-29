@@ -1,6 +1,6 @@
 services:
   vrising:
-    image: trueosiris/vrising
+    build: .
     environment:
       - TZ=Europe/Paris
       - SERVERNAME=vrising-Chrome
